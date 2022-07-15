@@ -1,0 +1,45 @@
+﻿@model University.BL.Models.CollegeVM
+
+
+@{
+    ViewBag.Title = "Details College";
+}
+
+<center class="block-header">
+      <h2>Details College</h2>
+</center>
+<br />
+<br />
+
+<a class="btn btn-primary" asp-controller="College" asp-action="index"> Back To List</a>
+
+
+<br />
+<br />
+
+<label asp-for="Id">College id</label>
+    <input type="text" class="form-control"disabled asp-for="Id" />
+    <br />
+    <br />
+
+
+    <label asp-for="Name">College Name</label>
+    <input type="text" class="form-control"disabled asp-for="Name" />
+    <br />
+    <br />
+
+    <label asp-for="Code">College Code</label>
+    <input type="text" class="form-control" disabled asp-for="Code" />
+
+    <br />
+    <br />
+
+     <label asp-for="Expenses">College Expenses</label>
+    <input type="text" class="form-control" readonly asp-for="Expenses" />
+
+    <br />
+    <br />
+
+<center>
+    <a class="btn btn-primary" asp-controller="College" asp-action="Edit" asp-route-id="@Model.Id"> Edit</a>
+</center>

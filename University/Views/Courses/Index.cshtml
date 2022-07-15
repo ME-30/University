@@ -1,0 +1,179 @@
+﻿@model IEnumerable<University.BL.Models.CoursesVM>
+@{
+    ViewBag.Title = "Courses";
+}
+
+
+
+
+ @section BootstrapSelect {
+        <link href="~/plugins/bootstrap-select/css/bootstrap-select.css" rel="stylesheet" />
+       <link href="~/plugins/jquery-datatable/skin/bootstrap/css/dataTables.bootstrap.css" rel="stylesheet">
+    }
+
+
+<center class="block-header">
+      <h2> Welcome To Courses</h2>
+</center>
+<br />
+<br />
+
+
+
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-xl-2">
+            <a class="btn btn-primary" asp-controller="Courses" asp-action="Create">Add Courses</a>
+        </div>
+        <br />
+        <form class="form-group" asp-controller="Courses" asp-action="Index">
+             <div class="col-xl-8">
+                    <input type="search" class="form-control" placeholder="SearchByName" name="SearchValue" />
+              </div>
+          <br />
+              <div class="col-xl-8">
+                   <input type="submit" value=" Search" class="btn btn-success" />
+              </div>
+        </form>
+        
+
+    </div>
+
+</div>
+    <div class="container-fluid">
+        <div class="row clearfix">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <div class="card">
+                    <div class="header">
+                        <h2> Welcome To Courses</h2>
+                        <ul class="header-dropdown m-r--5">
+                            <li class="dropdown">
+                                <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                    <i class="material-icons">more_vert</i>
+                                </a>
+                                <ul class="dropdown-menu pull-right">
+                                    <li><a href="javascript:void(0);">Action</a></li>
+                                    <li><a href="javascript:void(0);">Another action</a></li>
+                                    <li><a href="javascript:void(0);">Something else here</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="body">
+                        <div class="table-responsive">
+                            <table class="table table-bordered table-striped text-center table-hover js-basic-example font-weight-bold dataTable">
+                                                            <thead>
+                                                                <tr> 
+                                                                    <th class="text-center">id </th>
+                                                                    <th class="text-center"> Course Name</th>
+                                                                    <th class="text-center"> Material</th>
+                                                                    <th class="text-center"> Exam</th>
+                                                                    <th class="text-center"> College</th>
+                                                                    <th class="text-center"> Edit</th>
+                                                                    <th class="text-center"> Delete</th>
+                                                                    <th class="text-center"> Details</th>
+                                                                </tr>
+
+                                                            </thead>
+
+
+
+                                                            <tbody>
+                                                                @foreach (var item in Model)
+                                                                {
+                                                                <tr>
+                                                                    <td>@item.id</td>
+                                                                    <td>@item.CourseName</td>
+                                                                    <td><a href="~/Files/Courses/@item.MaterialName">Download Materail</a></td>
+                                                                    <td><a href="~/Files/Exams/@item.ExamName">Download Exam</a></td>
+
+
+
+                                                                      <td>@item.College.Name</td>
+                                                                     <td>
+                                                                        <a class="btn btn-success"  asp-controller="Courses" asp-action="Edit" asp-route-id="@item.id"> Edit</a>
+                                                                    </td>
+                                                                    <td>
+                                                                         <a class="btn btn-danger"  asp-controller="Courses" asp-action="Delete" asp-route-id="@item.id">Delete</a>
+                                                                    </td>
+                                                                    <td>
+                                                                         <a class="btn btn-warning"  asp-controller="Courses" asp-action="Details" asp-route-id="@item.id">Details</a>
+                                                                    </td>
+                                                                </tr>
+                                                                }
+                                                               
+                                                            </tbody>
+
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+@section DataTableSection{
+
+    <script src="~/plugins/jquery-datatable/jquery.dataTables.js">     </script>
+
+    <script src="~/plugins/jquery-datatable/skin/bootstrap/js/dataTables.bootstrap.js">
+    </script>
+    
+    <script src="~/plugins/jquery-datatable/extensions/export/dataTables.buttons.min.js"></script>
+    <script src="~/plugins/jquery-datatable/extensions/export/buttons.flash.min.js"></script>
+    <script src="~/plugins/jquery-datatable/extensions/export/jszip.min.js"></script>
+    <script src="~/plugins/jquery-datatable/extensions/export/pdfmake.min.js"></script>
+    <script src="~/plugins/jquery-datatable/extensions/export/vfs_fonts.js"></script>
+    <script src="~/plugins/jquery-datatable/extensions/export/buttons.html5.min.js"></script>
+    <script src="~/plugins/jquery-datatable/extensions/export/buttons.print.min.js"></script>
+
+
+     <script>
+
+    
+    $(function () {
+
+
+                $('.js-basic-example').DataTable({
+                    responsive: true,
+                    paging: true,
+                    pageLength: 5,
+                    bSort: true,
+                    bFilter: true,
+                    //bLengthChange: false,
+                    //bInfo: false,
+                    lengthMenu: [[5, 10, 25, 50, -1], [5, 10, 25, 50, "All"]],
+
+                });
+                 var table = $('.js-basic-example').DataTable();
+
+            new $.fn.dataTable.Buttons(table, {
+                buttons: [
+                    'copy', 'excel', 'pdf', 'csv', 'print'
+                ]
+            });
+
+            table.buttons().container()
+                .appendTo($('.col-sm-6:eq(0)', table.table().container()));
+
+            });
+
+           
+
+
+    </script>
+
+}
+
+
+     
+
+
+
+
+
+
+
+

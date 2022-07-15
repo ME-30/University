@@ -1,0 +1,15 @@
+C:\Users\mostafa\source\repos\University.DAL\bin\Debug\net5.0\University.DAL.deps.json
+C:\Users\mostafa\source\repos\University.DAL\bin\Debug\net5.0\University.DAL.dll
+C:\Users\mostafa\source\repos\University.DAL\bin\Debug\net5.0\University.DAL.pdb
+C:\Users\mostafa\source\repos\University.DAL\obj\Debug\net5.0\University.DAL.csproj.AssemblyReference.cache
+C:\Users\mostafa\source\repos\University.DAL\obj\Debug\net5.0\University.DAL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\mostafa\source\repos\University.DAL\obj\Debug\net5.0\University.DAL.AssemblyInfoInputs.cache
+C:\Users\mostafa\source\repos\University.DAL\obj\Debug\net5.0\University.DAL.AssemblyInfo.cs
+C:\Users\mostafa\source\repos\University.DAL\obj\Debug\net5.0\University.DAL.csproj.CoreCompileInputs.cache
+C:\Users\mostafa\source\repos\University.DAL\obj\Debug\net5.0\University.DAL.dll
+C:\Users\mostafa\source\repos\University.DAL\obj\Debug\net5.0\refint\University.DAL.dll
+C:\Users\mostafa\source\repos\University.DAL\obj\Debug\net5.0\University.DAL.pdb
+C:\Users\mostafa\source\repos\University.DAL\obj\Debug\net5.0\ref\University.DAL.dll
+C:\Users\mostafa\source\repos\University.DAL\bin\Debug\net5.0\University.DAL.runtimeconfig.json
+C:\Users\mostafa\source\repos\University.DAL\bin\Debug\net5.0\University.DAL.runtimeconfig.dev.json
+C:\Users\mostafa\source\repos\University.DAL\obj\Debug\net5.0\University.DAL.genruntimeconfig.cache

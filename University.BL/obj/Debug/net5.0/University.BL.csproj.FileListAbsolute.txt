@@ -1,0 +1,15 @@
+C:\Users\mostafa\source\repos\University.BL\bin\Debug\net5.0\University.BL.deps.json
+C:\Users\mostafa\source\repos\University.BL\bin\Debug\net5.0\University.BL.dll
+C:\Users\mostafa\source\repos\University.BL\bin\Debug\net5.0\University.BL.pdb
+C:\Users\mostafa\source\repos\University.BL\bin\Debug\net5.0\University.DAL.dll
+C:\Users\mostafa\source\repos\University.BL\bin\Debug\net5.0\University.DAL.pdb
+C:\Users\mostafa\source\repos\University.BL\obj\Debug\net5.0\University.BL.csproj.AssemblyReference.cache
+C:\Users\mostafa\source\repos\University.BL\obj\Debug\net5.0\University.BL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\mostafa\source\repos\University.BL\obj\Debug\net5.0\University.BL.AssemblyInfoInputs.cache
+C:\Users\mostafa\source\repos\University.BL\obj\Debug\net5.0\University.BL.AssemblyInfo.cs
+C:\Users\mostafa\source\repos\University.BL\obj\Debug\net5.0\University.BL.csproj.CoreCompileInputs.cache
+C:\Users\mostafa\source\repos\University.BL\obj\Debug\net5.0\University.BL.csproj.CopyComplete
+C:\Users\mostafa\source\repos\University.BL\obj\Debug\net5.0\University.BL.dll
+C:\Users\mostafa\source\repos\University.BL\obj\Debug\net5.0\refint\University.BL.dll
+C:\Users\mostafa\source\repos\University.BL\obj\Debug\net5.0\University.BL.pdb
+C:\Users\mostafa\source\repos\University.BL\obj\Debug\net5.0\ref\University.BL.dll

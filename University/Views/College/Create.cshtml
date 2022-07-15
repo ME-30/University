@@ -1,0 +1,49 @@
+﻿@model University.BL.Models.CollegeVM
+
+
+@{
+    ViewBag.Title = "Create College";
+    Layout = "~/Views/Layout/MainLayout.cshtml";
+}
+
+<center class="block-header">
+      <h2>Create College</h2>
+</center>
+<br />
+<br />
+
+<a class="btn btn-primary" asp-controller="College" asp-action="index"> Back To List</a>
+
+
+<br />
+<br />
+
+<form class="form-group" asp-controller="College" asp-action="Create">
+    <label asp-for="Name">College Name</label>
+    <input type="text" class="form-control" asp-for="Name" />
+    <span asp-validation-for="Name"class="text-denger"></span>
+    <br />
+    <br />
+
+    <label asp-for="Code">College Code</label>
+    <input type="text" class="form-control" asp-for="Code" />
+   <span asp-validation-for="Code" class="text-denger"></span>
+
+    <br />
+    <br />
+    <label asp-for="Expenses">College Expenses</label>
+    <input type="text" class="form-control" asp-for="Expenses" />
+   <span asp-validation-for="Expenses" class="text-denger"></span>
+
+    <br />
+    <br />
+    
+    <input type="submit" value="Save" class="btn btn-info" />
+
+</form>
+
+@section Validation{
+     <script src="~/plugins/jquery-validation/jquery.validate.js"></script>
+     <script src="~/plugins/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
+
+}

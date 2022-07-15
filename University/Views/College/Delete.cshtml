@@ -1,0 +1,41 @@
+﻿@model University.BL.Models.CollegeVM
+
+
+@{
+    ViewBag.Title = "Edit College";
+}
+
+<center class="block-header">
+      <h2>Delete College</h2>
+</center>
+<br />
+<br />
+
+<a class="btn btn-primary" asp-controller="College" asp-action="index"> Back To List</a>
+
+
+<br />
+<br />
+
+<form class="form-group" asp-controller="College" asp-action="Delete">
+    <label asp-for="Name">College Name</label>
+    <input type="text" class="form-control" readonly asp-for="Name" />
+    <br />
+    <br />
+
+    <label asp-for="Code">College Code</label>
+    <input type="text" class="form-control"readonly asp-for="Code" />
+
+    <br />
+    <br />
+
+     <label asp-for="Expenses">College Expenses</label>
+    <input type="text" class="form-control" readonly asp-for="Expenses" />
+
+    <br />
+    <br />
+
+    <input type="submit" value="Delete" class="btn btn-info" />
+
+</form>
+
